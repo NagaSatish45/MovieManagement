@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "dd6b6804-a44e-41a4-abca-201e3c7aa2c5",
+		"name": "Movies demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32996806"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5159/api/Authentication/Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVzZXIxIiwibmJmIjoxNzA3NjM2MzIwLCJleHAiOjE3MDc2MzY5MjAsImlhdCI6MTcwNzYzNjMyMH0.zxvalJM94c8tQZRiDrl7v1MDzPcP44scu3aK1J_mT6s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"user1\",\r\n  \"password\": \"password1\",\r\n  \"emailAddress\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5159/api/Authentication/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5159",
+					"path": [
+						"api",
+						"Authentication",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5159/api/Movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVzZXIxIiwibmJmIjoxNzA4MDEzOTI1LCJleHAiOjE3MDgwMTQ1MjUsImlhdCI6MTcwODAxMzkyNX0.gI09dbgYFSx26z4IMgEB4aDD1taXITv2_Q8m9hh4_74",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5159/api/Movies/GetAllMovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5159",
+					"path": [
+						"api",
+						"Movies",
+						"GetAllMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5159/api/Movies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InVzZXIxIiwibmJmIjoxNzA4MDEzOTI1LCJleHAiOjE3MDgwMTQ1MjUsImlhdCI6MTcwODAxMzkyNX0.gI09dbgYFSx26z4IMgEB4aDD1taXITv2_Q8m9hh4_74",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"DON\",\r\n  \"movieLanguage\": \"Hindi\",\r\n  \"releaseYear\": \"2016\",\r\n  \"ott\": \"Netflix\",\r\n  \"actors\": [\r\n    {\r\n      \"movieId\": 1,\r\n      \"actorId\": 1\r\n    }\r\n  ],\r\n  \"ratings\": [\r\n    {\r\n      \"movieId\": 1,\r\n      \"rating\": 3,\r\n      \"review\": \"Good\",\r\n      \"timestamp\": \"2024-02-15T07:28:19.154Z\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5159/api/Movies/AddMovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5159",
+					"path": [
+						"api",
+						"Movies",
+						"AddMovie"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
