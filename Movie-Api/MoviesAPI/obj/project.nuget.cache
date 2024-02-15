@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GCetnCu+bsXc0s3T8Btx93EjIUlRcSZBkbGVTq/YrdITWGcd/g32TGU1zA7fitxHiVArUUspjH+EK/e8GCRtSg==",
+  "dgSpecHash": "JVvZ4yeIDpxosY6ltZWt5hOGObTKdOCYu6v4AGC0cjvj5dafLBnNQLTWJcJbVdLMqovDJOhWLz36CC8yzLXj+w==",
   "success": true,
-  "projectFilePath": "D:\\MoviesAPI-master\\MoviesAPI-master\\MoviesAPI\\MoviesAPI.csproj",
+  "projectFilePath": "D:\\MovieManagement\\Movie-Api\\MoviesAPI\\MoviesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nagas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nagas\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.27\\microsoft.aspnetcore.authentication.jwtbearer.6.0.27.nupkg.sha512",

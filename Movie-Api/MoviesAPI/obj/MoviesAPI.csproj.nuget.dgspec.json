@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MoviesAPI-master\\MoviesAPI-master\\MoviesAPI\\MoviesAPI.csproj": {}
+    "D:\\MovieManagement\\Movie-Api\\MoviesAPI\\MoviesAPI.csproj": {}
   },
   "projects": {
-    "D:\\MoviesAPI-master\\MoviesAPI-master\\MoviesAPI\\MoviesAPI.csproj": {
+    "D:\\MovieManagement\\Movie-Api\\MoviesAPI\\MoviesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MoviesAPI-master\\MoviesAPI-master\\MoviesAPI\\MoviesAPI.csproj",
+        "projectUniqueName": "D:\\MovieManagement\\Movie-Api\\MoviesAPI\\MoviesAPI.csproj",
         "projectName": "MoviesAPI",
-        "projectPath": "D:\\MoviesAPI-master\\MoviesAPI-master\\MoviesAPI\\MoviesAPI.csproj",
+        "projectPath": "D:\\MovieManagement\\Movie-Api\\MoviesAPI\\MoviesAPI.csproj",
         "packagesPath": "C:\\Users\\nagas\\.nuget\\packages\\",
-        "outputPath": "D:\\MoviesAPI-master\\MoviesAPI-master\\MoviesAPI\\obj\\",
+        "outputPath": "D:\\MovieManagement\\Movie-Api\\MoviesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nagas\\AppData\\Roaming\\NuGet\\NuGet.Config",
