@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import MoviesDashboard from "./components/MoviesDashboard";
 import { toast, ToastContainer } from "react-toastify";
+import React, { useEffect, useState } from "react";
 function App() {
     const [movies, setMovies] = useState([]);
     const [movie, setMovie] = useState();
@@ -32,7 +33,7 @@ function App() {
     const fetchData = async () => {
         const token = await getToken('user1','password1','');
         try {
-            axios.get('http://localhost:5159/api/Movies', {
+            axios.get('http://localhost:5159/api/Movies/GetAllMovie', {
                 headers: { Authorization: `Bearer ${token}` },
             }).then((response) => {
                 setMovies(response.data);
@@ -57,7 +58,7 @@ function App() {
     function handleEditMovie(movie) {
         axios({
             method: "put",
-            url: `http://localhost:5159/api/Movies/${movie.id}`,
+            url: `http://localhost:5159/api/Movies/UpdateMovie/${movie.id}`,
             data: {
                 Id: movie.id,
                 Title: movie.title,
@@ -95,7 +96,7 @@ function App() {
         };
         axios({
             method: "post",
-            url: "http://localhost:5159/api/Movies",
+            url: "http://localhost:5159/api/Movies/AddMovie",
             headers: { Authorization: `Bearer ${token}` },
             data: data,
             config: {
@@ -139,7 +140,7 @@ function App() {
     function deleteMovie(id) {
         setshowEditForm(false);
         setMovie("");
-        axios.delete(`http://localhost:5159/api/Movies/${id}`).then(() => {
+        axios.delete(`http://localhost:5159/api/Movies/DeleteMovie/${id}`).then(() => {
             toast.success("Movie deleted successfully", {
                 position: toast.POSITION.TOP_RIGHT,
             });
